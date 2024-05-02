@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"> <!-- Definición de la codificación de caracteres -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista en dispositivos móviles -->
+<title>Iniciar Sesión - Policlinico ULEAM</title> <!-- Título de la página -->
+<link rel="stylesheet" href="login.css"> <!-- Enlace al archivo CSS para estilos -->
+</head>
+<body>
+<div class="container"> <!-- Contenedor principal -->
+    <img src="img/login.jpg" alt="Login Image" class="login-image"> <!-- Imagen de inicio de sesión -->
+    <form id="loginForm" onsubmit="return validarInicioSesion()"> <!-- Formulario de inicio de sesión -->
+        <h2>Iniciar Sesión</h2> <!-- Título del formulario -->
+        <div class="input-group"> <!-- Grupo de entrada de datos (correo electrónico) -->
+            <label for="email"><b>Correo electrónico:</b></label> <!-- Etiqueta para el campo de correo electrónico -->
+            <input type="email" id="email" name="email" required> <!-- Campo de entrada para el correo electrónico -->
+        </div>
+        <div class="input-group"> <!-- Grupo de entrada de datos (contraseña) -->
+            <label for="password"><b>Contraseña:</b></label> <!-- Etiqueta para el campo de contraseña -->
+            <input type="password" id="password" name="password" required> <!-- Campo de entrada para la contraseña -->
+        </div>
+        <button type="submit">Iniciar Sesión</button> <!-- Botón para enviar el formulario -->
+    </form>
+</div>
+<script src="login.js"></script> <!-- Enlace al archivo JavaScript para la validación -->
+</body>
+</html>

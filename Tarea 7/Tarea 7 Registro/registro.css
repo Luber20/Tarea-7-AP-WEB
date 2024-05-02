@@ -1,0 +1,80 @@
+/* Estilo global para todos los elementos */
+* {
+    box-sizing: border-box; /* Incluye el padding y border en el ancho y alto del elemento */
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente del texto */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el padding predeterminado */
+    background-image: url('iman.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Posiciona la imagen en el centro */
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 500px; /* Ancho máximo del contenedor */
+    margin: 50px auto; /* Margen superior e inferior automático, margen izquierdo y derecho automático */
+    padding: 20px; /* Espaciado interno */
+    background-color: #fff; /* Color de fondo */
+    border-radius: 5px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilos para los encabezados h2 */
+h2 {
+    text-align: center; /* Alineación centrada */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos para grupos de entrada de datos */
+.input-group {
+    margin-bottom: 15px; /* Margen inferior */
+}
+
+/* Estilos para etiquetas de texto */
+label {
+    display: block; /* Mostrar como bloque para ocupar toda la anchura disponible */
+    margin-bottom: 5px; /* Margen inferior */
+}
+
+/* Estilos para campos de entrada de texto, email, contraseña, teléfono y select */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Relleno interno */
+    margin-top: 5px; /* Margen superior */
+    margin-bottom: 15px; /* Margen inferior */
+    border: 1px solid #ccc; /* Borde con color gris claro */
+    border-radius: 5px; /* Borde redondeado */
+}
+
+/* Estilos para botones */
+button {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Relleno interno */
+    background-color: #4CAF50; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cursor de puntero al pasar por encima */
+}
+
+/* Estilos para el hover del botón */
+button:hover {
+    background-color: #45a049; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos para mensajes de error */
+.error {
+    color: red; /* Color rojo */
+    font-size: 0.8em; /* Tamaño de fuente más pequeño */
+    margin-top: -10px; /* Margen superior negativo */
+    margin-bottom: 10px; /* Margen inferior */
+}

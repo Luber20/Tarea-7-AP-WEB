@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Usuario - Policlinico ULEAM</title>
+<!-- Se enlaza el archivo CSS para estilos -->
+<link rel="stylesheet" href="registro.css">
+</head>
+<body>
+<!-- Se crea un contenedor para el formulario -->
+<div class="container">
+    <!-- Formulario de registro -->
+    <form id="registroForm" onsubmit="return validarRegistro()">
+        <!-- Título del formulario -->
+        <h2>Registro de Usuario</h2>
+        <!-- Campo de nombre completo -->
+        <div class="input-group">
+            <label for="nombre"><b>Nombre completo:</b></label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <!-- Campo de correo electrónico -->
+        <div class="input-group">
+            <label for="email"><b>Correo electrónico:</b></label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <!-- Campo de contraseña -->
+        <div class="input-group">
+            <label for="password"><b>Contraseña:</b></label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <!-- Campo de fecha de nacimiento -->
+        <div class="input-group">
+            <label for="fechaNacimiento"><b>Fecha de Nacimiento:</b></label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+        </div>
+        <!-- Campo de género -->
+        <div class="input-group">
+            <label for="genero"><b>Género:</b></label>
+            <select id="genero" name="genero" required>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
+        <!-- Campo de teléfono -->
+        <div class="input-group">
+            <label for="telefono"><b>Teléfono:</b></label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </div>
+        <!-- Campo de dirección -->
+        <div class="input-group">
+            <label for="direccion"><b>Dirección:</b></label>
+            <input type="text" id="direccion" name="direccion" required>
+        </div>
+        <!-- Botón para enviar el formulario -->
+        <button type="submit">Registrarse</button>
+    </form>
+</div>
+<!-- Se enlaza el archivo JavaScript para funcionalidades -->
+<script src="registro.js"></script>
+</body>
+</html>

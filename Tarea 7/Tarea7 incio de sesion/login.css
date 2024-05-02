@@ -1,0 +1,77 @@
+/* Estilo global para todos los elementos */
+* {
+    box-sizing: border-box; /* Incluye el borde en el tamaño total del elemento */
+}
+
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente para todo el texto */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    background-image: url('img/iman.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    color: #333; /* Color de texto predeterminado */
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    max-width: 500px; /* Ancho máximo del contenedor */
+    margin: 50px auto; /* Margen superior e inferior automático y margen izquierdo y derecho automático para centrar */
+    padding: 20px; /* Relleno dentro del contenedor */
+    background-color: #fff; /* Color de fondo del contenedor */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilo para los títulos */
+h2 {
+    text-align: center; /* Alineación del texto al centro */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilo para los grupos de entrada */
+.input-group {
+    margin-bottom: 15px; /* Margen inferior */
+}
+
+/* Estilo para las etiquetas */
+label {
+    display: block; /* Muestra las etiquetas en bloque (una debajo de otra) */
+    margin-bottom: 5px; /* Margen inferior */
+}
+
+/* Estilo para los campos de entrada de correo electrónico y contraseña */
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Relleno dentro del campo */
+    margin-top: 5px; /* Margen superior */
+    margin-bottom: 15px; /* Margen inferior */
+    border: 1px solid #ccc; /* Borde con color gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para los botones */
+button {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Relleno dentro del botón */
+    background-color: #4CAF50; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Estilo para el botón al pasar el cursor sobre él */
+button:hover {
+    background-color: #45a049; /* Cambia el color de fondo al pasar el cursor */
+}
+
+/* Estilo para la imagen de inicio de sesión */
+.login-image {
+    display: block; /* Muestra la imagen como bloque */
+    margin: 0 auto; /* Margen automático a los lados para centrar */
+    max-width: 200px; /* Ancho máximo de la imagen */
+    margin-bottom: 20px; /* Margen inferior */
+}
